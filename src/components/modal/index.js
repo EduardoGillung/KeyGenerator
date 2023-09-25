@@ -1,13 +1,21 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Pressable } from 'react-native';
+import * as Clipboard from 'expo-clipboard'
 
 export function ModalPassword({password, handleClose}) {
+
+    async function handleCopyPassword(){
+        await Clipboard.setStringAsync(password)
+        alert("Senha salva com sucesso!")
+    }
+onLongPress={handleCopyPassword}
+
  return (
     <View style={styles.container}>
         <View style={styles.content}>
             <Text style={styles.title}>Senha gerada</Text>
 
-            <Pressable style={styles.innerPassword}>
+            <Pressable style={styles.innerPassword} onLongPress={handleCopyPassword}> 
                 <Text style={styles.text}>
                     {password}
                 </Text>
@@ -76,6 +84,10 @@ const styles = StyleSheet.create({
         marginBottom: 14,
 
     },
+    buttonText:{
+        fontWeight: 'bold',
+        fontSize: 18,
+    },
     buttonSave:{
         backgroundColor: '#392DE9',
         borderRadius: 8,
@@ -84,5 +96,6 @@ const styles = StyleSheet.create({
     buttonSaveText:{
        color: '#FFF',
        fontWeight: 'bold',
+       fontSize: 18,
     }
 })
