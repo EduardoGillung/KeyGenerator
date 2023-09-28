@@ -3,11 +3,13 @@ import { useState, useEffect } from 'react';
 import { View, StyleSheet, Text, FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import useStorage from '../../hooks/useStorage';
+import { PasswordItem } from '../../components/PasswordItem';
 
 export function Passwords() {
   const [listPasswords, setListPasswords] = useState([])
+
   const focused = useIsFocused();
-  const { getItem } = useStorage();
+  const { getItem, removeItem } = useStorage();
 
   useEffect(() => {
     async function loadPasswords(){
@@ -16,21 +18,27 @@ export function Passwords() {
 
     }
 
+    loadPasswords();
   }, [focused])
- return (
-  <SafeAreaView style={{ flex: 1, }}>
-   <View style={styles.header}>
-    <Text style={styles.title}>Minhas senhas</Text>
-   </View>
 
-   <View style={styles.content}>
-    <FlatList
-      data={listPasswords}
-      keyExtractor={ (item) => String(item) }
-      renderItem={ ({ item }) => <Text>{item}</Text> } 
-    />
-   </View>
-  </SafeAreaView>
+  async function handleDeletePassword(item){
+      const passwords = await removeItem("@pass", item)
+      setListPasswords(passwords)
+    }
+  return (
+    <SafeAreaView style={{ flex: 1, }}>
+    <View style={styles.header}>
+      <Text style={styles.title}>Minhas senhas</Text>
+    </View>
+
+    <View style={styles.content}>
+      <FlatList
+        data={listPasswords}
+        keyExtractor={ (item) => String(item) }
+        renderItem={ ({ item }) => <PasswordItem data={item} removePassword={ () => handleDeletePassword(item) } /> } 
+      />
+    </View>
+    </SafeAreaView>
    
   );
 }
@@ -46,5 +54,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#FFF',
     fontWeight: 'bold',
+  },
+  content:{
+
   }
 })
