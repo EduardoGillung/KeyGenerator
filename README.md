@@ -2,7 +2,7 @@
 
 <div align="center"><strong>Built with the React Native & Expo</strong></div>
 <br />
-<div align="center">
+
 
 ## Overview
 
