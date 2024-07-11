@@ -1,8 +1,10 @@
 Password Generator
 
-Built with the React Native with Expo.
+<div align="center"><strong>Built with the React Native & Expo</strong></div>
+<br />
+<div align="center">
 
-
+## Overview
 
 Framework - React Native (App Router)
 Language - JavaScript
@@ -13,11 +15,12 @@ Components - Expo go, Node.js
 
 
 
-Getting Started
+## Getting Started
 
-To run the project follow these steps:
+To run the project on your machine follow these steps:
 
           npm install
+          
           npm start
 
    
