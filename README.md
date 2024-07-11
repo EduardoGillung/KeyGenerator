@@ -1,6 +1,6 @@
 Password Generator
-Built with the React Native with Expo.
 
+Built with the React Native with Expo.
 
 Framework - React Native (App Router)
 Language - JavaScript
