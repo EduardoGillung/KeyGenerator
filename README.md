@@ -18,22 +18,8 @@ npm install
 npm start
 
 You should now be able to access the application with Expo go using one of this options:
-▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-█ ▄▄▄▄▄ █ ██▀▀ ▀▄██ ▄▄▄▄▄ █
-█ █   █ █  ▀█ ▀▄█▀█ █   █ █
-█ █▄▄▄█ █▀  █▄▀▀▄▀█ █▄▄▄█ █
-█▄▄▄▄▄▄▄█▄█ ▀▄█ ▀▄█▄▄▄▄▄▄▄█
-█▄▄▀▀▄▄▄▀▀█▄█▄█▄▀▄██ ▀▄▄ ▄█
-██▀█ ▀ ▄█▀ ▄█▀▄█ ▀▀ █▄  ▀██
-█▀▄  ▀█▄▀ █▀▄▀█▄▀▄▀▄▀▀▄ ▀██
-███ ▀▀ ▄▄▀▀  ▄██▄▄▄█▄▀ ▀███
-█▄▄█▄██▄▄▀███▄▀▄▄ ▄▄▄ ▀ ▄▄█
-█ ▄▄▄▄▄ █▀ ▄█▀██▀ █▄█ ▀▀▀██
-█ █   █ █▄▄▄▄ █▄█▄▄ ▄▄▀ ▀▀█
-█ █▄▄▄█ █▀▀▀ ▄██▄██▄▀█▀▀ ██
-█▄▄▄▄▄▄▄█▄█████▄████▄▄▄▄▄▄█
 
-› Metro waiting on exp://192.168.15.19:8081
+› Metro waiting on exp://
 › Scan the QR code above with Expo Go (Android) or the Camera app (iOS)
 
 › Using Expo Go
