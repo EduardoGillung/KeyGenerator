@@ -6,12 +6,11 @@
 
 ## Overview
 
-Framework - React Native (App Router)
-Language - JavaScript
-Database - Postgres
-Deployment - Vercel
-Components - Expo go, Node.js
-
+- Framework - [React Native (App Router)](https://reactnative.dev/)
+- Language - [JavaScript](https://www.javascript.com/)
+- Database - [Async storage](https://console.firebase.google.com/u/0/project/myapp-14570/database?hl=pt-br)
+- Styling - [Styled Components](https://styled-components.com/)
+- Components - [Node.JS](https://nodejs.org/pt)
 
 
 
