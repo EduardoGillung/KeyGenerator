@@ -1,5 +1,8 @@
 ## Password Generator
 
+<div>Random key generator designed to create passwords with random letters and numbers, allowing save or delete these generated passwords.</div>
+
+
 <div><strong>Built with the React Native & Expo</strong></div>
 <br />
 
