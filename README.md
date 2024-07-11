@@ -20,7 +20,6 @@ Components - Expo go, Node.js
 To run the project on your machine follow these steps:
 
           npm install
-          
           npm start
 
    
