@@ -1,4 +1,4 @@
-          Password Generator
+Password Generator
 Built with the React Native with Expo.
 
 
@@ -11,11 +11,10 @@ Components - Expo go, Node.js
 
 Getting Started
 
-To execute the project follow these steps:
+To run the project follow these steps:
 
-npm install
-
-npm start
+          npm install
+          npm start
 
 You should now be able to access the application with Expo go using one of this options:
 
